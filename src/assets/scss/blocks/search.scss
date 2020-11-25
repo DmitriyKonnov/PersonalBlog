@@ -1,0 +1,16 @@
+.search {
+    background-color: $primary-color;
+    max-width: 21rem;
+    width: 100%;
+
+    .search__input {
+        display: block;
+        padding: 0 2rem;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        height: 100%;
+        color: $white;
+
+    }
+}

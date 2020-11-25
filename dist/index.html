@@ -18,7 +18,62 @@
 
 <body>
     <div class="page">
-        <header class="header">header</header>
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav_item">
+                        <li class="nav__list">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_item">
+                        <li class="nav__list">
+                            <a class="nav__link  has--subnav" href="#">Статьи</a>
+        
+                            <ul class="subnav">
+                                <li class="subnav__list">
+                                    <a href="">Создание сайтов</a>
+                                </li>
+                                <li class="subnav__list">
+                                    <a href="">Интернет-маркетинг</a>
+                                </li>
+                                <li class="subnav__list">
+                                    <a href="">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav_item">
+                        <li class="nav__list">
+                            <a class="nav__link" href="#">Обо мне</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_item">
+                        <li class="nav__list">
+                            <a class="nav__link" href="#">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav_item">
+                        <li class="nav__list">
+                            <a class="nav__link" href="#">Профиль</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_item">
+                        <li class="nav__list">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                    <form class="search" action="/" method="POST">
+                        <input class="search__input" type="text" placeholder="Поиск по блогу">
+                    </form>
+                </nav>
+            </div>
+        </header>
         <aside class="sidebar">
             <div class="sidebar__header">
                 <img src="assets/images/SIdebar/SidebarHeader.jpg" alt="">
