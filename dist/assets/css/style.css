@@ -372,6 +372,7 @@ html {
 
 a {
     color: #fff;
+    text-decoration: none;
 }
 
 body {
@@ -387,14 +388,79 @@ body {
 }
 
 .header {
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
     width: calc(100% - 30rem);
-    height: 4rem;
     background-color: #0D0D0D;
     color: #fff;
     box-shadow: 0 5px 22px #000;
+}
+
+.header__left {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+}
+
+.header__right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+}
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__list {
+    position: relative;
+}
+
+.nav__list:hover .nav__link {
+    background-color: #3137C9;
+}
+
+.nav__list:hover > .subnav {
+    display: block;
+}
+
+.nav__link {
+    padding: 1.5rem 1.3rem;
+    display: block;
+    font-size: 1.4rem;
+    font-family: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: .1s linear;
+}
+
+.nav__link:hover {
+    background-color: #3137C9;
+}
+
+.nav__link.has--subnav {
+    position: relative;
+    padding-right: 3rem;
+}
+
+.nav__link.has--subnav:after {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 1.4rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .main {
@@ -522,4 +588,55 @@ body {
 
 .btn--blue:hover {
     background-color: #2c31b4;
+}
+
+.search {
+    background-color: #202020;
+    max-width: 21rem;
+    width: 100%;
+}
+
+.search .search__input {
+    display: block;
+    padding: 0 2rem;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 16.5rem;
+    background-color: #3137C9;
+    padding: .45rem 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subnav .subnav__list {
+    padding: .45rem 1.2rem;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: .1s ease;
+}
+
+.subnav .subnav__list:hover {
+    background-color: #2c31b4;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+}
+
+.stories .stories__item {
+    height: 20rem;
+    background-color: #fff;
 }
