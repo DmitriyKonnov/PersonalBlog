@@ -816,7 +816,30 @@ body {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-.post__header {
+.post__action {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.post__action .post__action--back, .post__action .post__action--share {
+    font-weight: 400;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: .6;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.post__action .post__action--back:hover, .post__action .post__action--share:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.post__header--img {
     margin: -2.5rem -2.5rem 2rem;
 }
 
@@ -824,10 +847,15 @@ body {
     margin: 0 0 2rem;
 }
 
-.post__title {
+.post__header_open {
+    margin-bottom: 3rem;
+}
+
+.post__header_title {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 500;
+    line-height: 2.1rem;
 }
 
 .post__img {
@@ -853,10 +881,82 @@ body {
     text-decoration: underline;
 }
 
-.post__content--text {
+.post__description {
     color: #D2D2D2;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+.post__text {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+}
+
+.post__text h1, .post__text h2, .post__text h3, .post__text h4, .post__text h5, .post__text h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.post__text p {
+    margin-bottom: 2.5rem;
+}
+
+.post__text a {
+    color: #3137C9;
+    transition: .1s linear;
+}
+
+.post__text a:hover {
+    text-decoration: underline;
+}
+
+.post__text ul, .post__text ol {
+    margin-bottom: 2.5rem;
+}
+
+.post__text ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.post__text table {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.post__text img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+}
+
+.post__text .fr-video {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.post__text .fr-video::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+}
+
+.post__text .fr-video iframe,
+    .post__text .fr-video video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .post__footer {
