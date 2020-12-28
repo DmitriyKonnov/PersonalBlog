@@ -380,7 +380,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #fff;
-    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .page {
@@ -892,6 +892,8 @@ body {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.1rem;
+    border-bottom: 1px solid #1C1C1C;
+    padding-bottom: 2.5rem;
 }
 
 .post__text h1, .post__text h2, .post__text h3, .post__text h4, .post__text h5, .post__text h6 {
@@ -1068,4 +1070,53 @@ body {
 .pagination__link.active {
     background-color: #3137C9;
     box-shadow: 0 0 10px rgba(49, 55, 201, 0.15);
+}
+
+.ralated {
+    padding-top: 2.5rem;
+    border-bottom: 1px solid #1C1C1C;
+}
+
+.related__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.related__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.related__list-item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.related__list-title {
+    margin-bottom: .5rem;
+}
+
+.related__list-title a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #F3EBA2;
+    transition: .1s linear;
+}
+
+.related__list-title a:hover {
+    text-decoration: underline;
+}
+
+.related__list-date {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #828282;
 }

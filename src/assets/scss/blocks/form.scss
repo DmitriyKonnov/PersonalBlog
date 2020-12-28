@@ -1,0 +1,32 @@
+.form{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.form__control{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3F3F3F;
+    color: $white;
+
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    margin-bottom: 1rem;
+
+    &:focus{
+        border-bottom: 1px solid $blue;
+    }
+
+    &--textarea{
+        height: 30px;
+        resize: none;
+        overflow: hidden;
+    }
+}
+
