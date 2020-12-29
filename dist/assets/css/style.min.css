@@ -496,6 +496,10 @@ body {
     box-shadow: 0 7px 17px -10px rgba(49, 55, 201, 0.2); }
     .btn--blue:hover {
       background-color: #2c31b4; }
+  .btn--rounded {
+    border-radius: 5px; }
+  .btn--small {
+    padding: 0.8rem 1.5rem; }
 
 .search {
   background-color: #202020;
@@ -862,19 +866,23 @@ body {
   flex-wrap: wrap; }
 
 .related__list-item {
-  flex-basis: 50%;
+  width: 50%;
   margin-bottom: 2.5rem; }
 
 .related__list-title {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #F3EBA2;
+  transition: .1s linear; }
   .related__list-title a {
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    color: #F3EBA2;
-    transition: .1s linear; }
-    .related__list-title a:hover {
-      text-decoration: underline; }
+    color: inherit; }
+  .related__list-title:hover {
+    text-decoration: underline; }
 
 .related__list-date {
   font-size: 1.2rem;
@@ -903,3 +911,53 @@ body {
     height: 30px;
     resize: none;
     overflow: hidden; }
+
+.comments {
+  margin-top: 5rem; }
+
+.comment__item > .comment {
+  margin-top: 3rem;
+  padding-left: 3rem; }
+
+.comment__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem; }
+
+.comment__avatar {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; }
+
+.comment__autor {
+  padding-left: 1.5rem; }
+
+.comment__name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  color: #fff; }
+
+.comment__date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #727272; }
+
+.comment__text {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem; }
+
+.comment__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #3137C9;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem; }
+  .comment__button:hover {
+    text-decoration: underline; }

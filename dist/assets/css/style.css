@@ -591,6 +591,10 @@ body {
     background-color: #2c31b4;
 }
 
+.btn--rounded {
+    border-radius: 5px;
+}
+
 .search {
     background-color: #202020;
     max-width: 21rem;
@@ -881,6 +885,14 @@ body {
     text-decoration: underline;
 }
 
+.post__subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
 .post__description {
     color: #D2D2D2;
     font-size: 1.4rem;
@@ -1073,8 +1085,8 @@ body {
 }
 
 .ralated {
-    padding-top: 2.5rem;
     border-bottom: 1px solid #1C1C1C;
+    margin-bottom: 2.5rem;
 }
 
 .related__title {
@@ -1119,4 +1131,32 @@ body {
     font-weight: 400;
     line-height: 1.4rem;
     color: #828282;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3F3F3F;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.form__control:focus {
+    border-bottom: 1px solid #3137C9;
+}
+
+.form__control--textarea {
+    height: 30px;
+    resize: none;
+    overflow: hidden;
 }
