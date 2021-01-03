@@ -346,6 +346,13 @@ body {
 .page {
   overflow: hidden; }
 
+.page__title {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #fff;
+  margin-bottom: 3rem; }
+
 .header {
   display: flex;
   position: fixed;
@@ -961,3 +968,70 @@ body {
   line-height: 1.4rem; }
   .comment__button:hover {
     text-decoration: underline; }
+
+.works__title {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  margin-bottom: 3rem; }
+
+.works {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  background-color: #202020;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+  margin-bottom: 3rem; }
+
+.works__preview {
+  flex: 1 1 50%;
+  height: auto; }
+  .works__preview .works__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.works__content {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  flex: 1 1 50%;
+  height: auto; }
+
+.works__content_title {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-bottom: 3rem; }
+  .works__content_title a:hover {
+    text-decoration: underline; }
+
+.works__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  color: #D2D2D2;
+  margin-bottom: 3rem; }
+
+.works__footer {
+  margin-top: auto;
+  text-align: right; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tags__item {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: #EA8C1E;
+  border-radius: 3px;
+  padding: .4rem .9rem; }

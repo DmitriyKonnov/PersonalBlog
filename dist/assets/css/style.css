@@ -595,6 +595,10 @@ body {
     border-radius: 5px;
 }
 
+.btn--small {
+    padding: 0.8rem 1.5rem;
+}
+
 .search {
     background-color: #202020;
     max-width: 21rem;
@@ -1105,16 +1109,15 @@ body {
 }
 
 .related__list-item {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+    width: 50%;
     margin-bottom: 2.5rem;
 }
 
 .related__list-title {
     margin-bottom: .5rem;
-}
-
-.related__list-title a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
@@ -1122,7 +1125,11 @@ body {
     transition: .1s linear;
 }
 
-.related__list-title a:hover {
+.related__list-title a {
+    color: inherit;
+}
+
+.related__list-title:hover {
     text-decoration: underline;
 }
 
@@ -1159,4 +1166,78 @@ body {
     height: 30px;
     resize: none;
     overflow: hidden;
+}
+
+.comments {
+    margin-top: 5rem;
+}
+
+.comment__item > .comment {
+    margin-top: 3rem;
+    padding-left: 3rem;
+}
+
+.comment__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.comment__avatar {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.comment__autor {
+    padding-left: 1.5rem;
+}
+
+.comment__name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #fff;
+}
+
+.comment__date {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #727272;
+}
+
+.comment__text {
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.comment__button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #3137C9;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.comment__button:hover {
+    text-decoration: underline;
+}
+
+.works__title {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    margin-bottom: 3rem;
+}
+
+.works {
+    width: 100%;
 }
