@@ -28,5 +28,14 @@
         resize: none;
         overflow: hidden;
     }
+
+    &--input{
+        padding-bottom: 1rem;
+        margin-bottom: 2.5rem;
+
+        &:hover{
+            border-bottom: 1px solid $blue;
+        }
+    }
 }
 

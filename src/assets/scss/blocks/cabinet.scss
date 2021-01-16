@@ -1,0 +1,36 @@
+
+.cabinet{
+    display: flex;
+}
+
+.cabinet__form{
+    width: 34rem;
+}
+
+.cabinet__avatar{
+    width: 26rem;
+    padding-left: 11rem;
+
+    img{
+        display: block;
+        max-width: 15rem;
+        max-height: 15rem;
+        object-fit: cover;
+
+        margin-bottom: 1.5rem;
+    }
+}
+
+.cabinet__file{
+    color: rgba($blue, .8);
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover{
+        text-decoration: none;
+        color: rgba($blue, 1);
+    }
+
+    input{
+        display: none;
+    }
+}

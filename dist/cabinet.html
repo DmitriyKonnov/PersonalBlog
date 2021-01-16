@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Search</title>
+    <title>Cabinet</title>
 </head>
 
 <body>
@@ -68,7 +68,7 @@
                             <a class="nav__link" href="#">Выйти</a>
                         </li>
                     </ul>
-                    <form class="search" action="/" method="POST">
+                    <form class="search" action="search.html" method="GET">
                         <input class="search__input" type="text" placeholder="Поиск по блогу">
                     </form>
                 </nav>
@@ -115,6 +115,35 @@
         </aside>        <main class="main">
             <div class="container">
                 
+                <h1 class="page__title">Профиль</h1>
+                
+                <form action="" class="form" method="POST">
+                    <div class="cabinet">
+                        <div class="cabinet__form">
+                            <div class="form__group">
+                                <input type="text" class="form__control form__control--input" placeholder="Ваше имя">
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__control form__control--input" placeholder="Ваше email">
+                            </div>
+                            <div class="form__group">
+                                <input type="password" class="form__control form__control--input" placeholder="Новый пароль">
+                            </div>
+                            <div class="form__group">
+                                <input type="password" class="form__control form__control--input" placeholder="Повторите пароль">
+                            </div>
+                        </div>
+                        <div class="cabinet__avatar">
+                            <img src="https://via.placeholder.com/150" alt="Аватар">
+                            <label class="cabinet__file">
+                                <input type="file">
+                                выбрать файл
+                            </label>
+                        </div>
+                    </div>
+                
+                    <button class="btn btn--blue btn--rounded btn--small">Сохранить</button>
+                </form>
             </div>
         </main>
     </div>
