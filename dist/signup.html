@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>My Profile</title>
+    <title>Signup</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
                 <nav class="nav">
                     <ul class="nav_item">
                         <li class="nav__list">
-                            <a class="nav__link" href="#">Профиль</a>
+                            <a class="nav__link" href="cabinet.html">Профиль</a>
                         </li>
                     </ul>
                     <ul class="nav_item">
@@ -115,11 +115,32 @@
         </aside>        <main class="main">
             <div class="container">
                 
-                <h1 class="page__title">Профиль</h1>
+                <h1 class="page__title page__title--center">Регистрация</h1>
                 
-                <form action="" class="form">
+                <form action="" class="form--center">
                     <div class="form__group">
-                        <input type="text" class="form__control">
+                        <input type="text" class="form__control form__control--input" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__control form__control--input" placeholder="Ваше email">
+                    </div>
+                    <div class="form__group">
+                        <input type="password" class="form__control form__control--input" placeholder="Пароль">
+                    </div>
+                    <div class="form__group">
+                        <input type="password" class="form__control form__control--input" placeholder="Повторите пароль">
+                    </div>
+                
+                    <div class="form__footer form__footer--center">
+                        <button class="btn btn--blue btn--rounded btn--small" type="submit">Регистрация</button>
+                        <ul class="form__footer-list">
+                            <li class="form__footer-list-item">
+                                <a href="signin.html">вход</a>
+                            </li>
+                            <li class="form__footer-list-item">
+                                <a href="reset.html">востановить</a>
+                            </li>
+                        </ul>
                     </div>
                 </form>
             </div>

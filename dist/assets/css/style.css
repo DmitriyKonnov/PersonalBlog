@@ -1176,6 +1176,15 @@ body {
     overflow: hidden;
 }
 
+.form__control--input {
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.form__control--input:hover {
+    border-bottom: 1px solid #3137C9;
+}
+
 .comments {
     margin-top: 5rem;
 }
@@ -1325,4 +1334,42 @@ body {
     background-color: #EA8C1E;
     border-radius: 3px;
     padding: .4rem .9rem;
+}
+
+.cabinet {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.cabinet__form {
+    width: 34rem;
+}
+
+.cabinet__avatar {
+    width: 26rem;
+    padding-left: 11rem;
+}
+
+.cabinet__avatar img {
+    display: block;
+    max-width: 15rem;
+    max-height: 15rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+    color: rgba(49, 55, 201, 0.8);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cabinet__file:hover {
+    text-decoration: none;
+    color: #3137c9;
+}
+
+.cabinet__file input {
+    display: none;
 }

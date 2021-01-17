@@ -344,7 +344,11 @@ body {
   font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .page {
-  overflow: hidden; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh; }
 
 .page__title {
   font-size: 2.1rem;
@@ -352,6 +356,8 @@ body {
   line-height: 2.1rem;
   color: #fff;
   margin-bottom: 3rem; }
+  .page__title--center {
+    text-align: center; }
 
 .header {
   display: flex;
@@ -900,6 +906,9 @@ body {
 .form {
   width: 100%;
   height: auto; }
+  .form--center {
+    max-width: 28rem;
+    margin: 0 auto; }
 
 .form__control {
   display: block;
@@ -923,6 +932,18 @@ body {
     margin-bottom: 2.5rem; }
     .form__control--input:hover {
       border-bottom: 1px solid #3137C9; }
+
+.form__footer--center {
+  text-align: center; }
+
+.form__footer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; }
+  .form__footer-list .form__footer-list-item {
+    margin: 0 .5rem; }
+    .form__footer-list .form__footer-list-item:hover {
+      text-decoration: underline; }
 
 .comments {
   margin-top: 5rem; }

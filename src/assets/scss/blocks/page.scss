@@ -1,5 +1,9 @@
 .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .page__title{
@@ -10,4 +14,8 @@
     color: $white;
 
     margin-bottom: 3rem;
+
+    &--center{
+        text-align: center;
+    }
 }
