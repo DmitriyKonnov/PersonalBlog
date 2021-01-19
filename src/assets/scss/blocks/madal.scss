@@ -26,6 +26,10 @@
     box-shadow: 0 10px 35px rgba($black, .25);
     
     border-radius: .5rem;
+
+    &--social{
+        padding: 8rem 14rem;
+    }
 }
 
 .modal__close{

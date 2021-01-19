@@ -455,6 +455,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto; }
+  .social--modal {
+    width: auto; }
 
 .profile .profile__avatar {
   position: relative;
@@ -1116,6 +1118,8 @@ body {
   background-color: #202020;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
   border-radius: .5rem; }
+  .modal__content--social {
+    padding: 8rem 14rem; }
 
 .modal__close {
   position: absolute;
